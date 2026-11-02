@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/*media queries*/
+
+@media screen and (min-width:390px)/* and (max-width:1200px)*/ {
+        ::-webkit-scrollbar{
+            width: 5px;
+            height: 0px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: lightgrey;
+            margin: 3px;
+            border-radius: 9px;
+        }
+        ul{
+            display: flex;
+            padding: 0px;
+        }
+        li{
+            position: relative;
+            width: 50px;
+            display: flex;
+            border-radius: 6px;
+            box-shadow: 2px 2px 2px black;
+            list-style-type:none ;
+            margin: 6px;
+        }
+        p{
+            padding: 20px;
+            margin: 9px;
+            max-width: 70vw;
+        }
+        article{
+            left: 50%;
+            transform: translate(-50%);
+            position: absolute;
+        }
+        menu{
+            margin: auto;
+            display:none;
+        }
+    }
