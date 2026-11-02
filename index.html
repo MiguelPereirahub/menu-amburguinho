@@ -7,13 +7,13 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>media query</title>
     </head>
-        <body>
+        <body onresize="mudouTamanho()">
                 <header>
                         <h1>Meu Site</h1>
                         <a id="menu"  onclick="clickMenu()"><img src="menu-aberto.png" alt="" width="20px" height="20px"></a>
                         <menu id="item">
                         <ul>
-                            <li><a href="#">Opção-1</a></li><br> <br>    
+                            <li><a href="#">Opção-1</a></li><br><br>     
                             <li><a href="#">Opção-2</a></li><br><br>
                             <li><a href="#">Opção-3</a></li><br><br>
                             <li><a href="#">Opção-4</a></li><br><br>
@@ -32,11 +32,18 @@
                     </main>
                 <script>
                     function clickMenu(){
-                        if (item.style.display == 'block' )  {
+                        if (item.style.display == 'block' ){  
                             item.style.display = 'none'
                         } else {
                             item.style.display = 'block'
-                        }                  
+                        }  
+                        }
+                    function mudouTamanho(){
+                        if (window.innerWidth >= 450){
+                        item.style.display = 'block'
+                     }else {
+                        item.style.display = 'none' 
+                    }
                     }
                 </script>
         </body>
